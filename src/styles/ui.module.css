@@ -1,0 +1,4 @@
+.gradient {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #BB48DA 0%, #111111 90%);
+  }
+  
