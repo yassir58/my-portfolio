@@ -1,6 +1,7 @@
 import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
+import Header from "./_components/Header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,7 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} bg-[#060606]`}>{children}</body>
+      <body className={`font-sans ${inter.variable} bg-[#060606]`}>
+      <main className="flex min-h-screen flex-col items-center justify-start bg-[#060606] text-white">
+      <Header />
+      {children}
+    </main>
+      </body>
     </html>
   );
 }
