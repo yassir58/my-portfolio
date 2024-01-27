@@ -6,34 +6,41 @@ const page:React.FC = () => {
         image:'ft_transandance.png',
         title:'TRANSANDANCE',
         subtitle:'Web Developement',
-        description:'Experience an exhilarating online multiplayer Pong game, fueled by the robust 42 network OAuth 2.0. The game boasts an invite-based matchmaking system, a feature-rich chat system, and a host of other exciting features'
+        description:'Experience an exhilarating online multiplayer Pong game, fueled by the robust 42 network OAuth 2.0. The game boasts an invite-based matchmaking system, a feature-rich chat system, and a host of other exciting features',
+        link:'https://github.com/yassir58/ft_transcendence'
     },
     
     {
         image:'kanban.png',
         title:'KANBAN TASK MANAGER',
         subtitle:'Web Developement',
-        description:'A Kanban-style task manager that enables users to efficiently manage and organize their tasks while facilitating seamless collaboration with others.'
+        description:'A Kanban-style task manager that enables users to efficiently manage and organize their tasks while facilitating seamless collaboration with others.',
+        link:'https://github.com/yassir58/next-task-manger'
 
     },
     {
         image:'trello-clone.png',
         title:'TRELLO CLONE',
         subtitle:'Web Developement',
-        description:'Introducing a Trello clone that empowers users to seamlessly create and customize boards, efficiently organize tasks, and foster collaboration by inviting users to join workspaces.'
+        description:'Introducing a Trello clone that empowers users to seamlessly create and customize boards, efficiently organize tasks, and foster collaboration by inviting users to join workspaces.',
+        link:'https://github.com/yassir58/Trello-clone'
+
 
     },
     {
         image:'webserv.png',
         title:'WEBSERV',
         subtitle:'Unix System Programming',
-        description:'Presenting a configurable web server crafted in C++, adept at supporting both static and dynamic content through CGI scripts. This robust server is built on the HTTP protocol, providing a versatile platform for web hosting'
+        description:'Presenting a configurable web server crafted in C++, adept at supporting both static and dynamic content through CGI scripts. This robust server is built on the HTTP protocol, providing a versatile platform for web hosting',
+        link:'https://github.com/yassir58/webserv'
+
     },
     {
-        image:'docker.png',
+    image:'docker.png',
         title:'INCEPTION',
         subtitle:'System Administration & Devops',
-        description:'This 42 school project is designed to expand your understanding of system administration through the practical application of Docker.'
+        description:'This 42 school project is designed to expand your understanding of system administration through the practical application of Docker.',
+        link:'https://github.com/yassir58/Inception-42'
     }
 ]
     return (<div className="flex flex-col w-[95%] h-full justify-start items-center">
@@ -46,7 +53,7 @@ const page:React.FC = () => {
         <div className='flex pt-8 pb-4 gap-4 justify-center items-start flex-wrap'>
             {
                 projects.map ((project, index) => {
-                    return <Card  key={index} image={project.image} title={project.title} subtitle={project.subtitle} description={project.description}/>
+                    return <Card  key={index} link={project.link} image={project.image} title={project.title} subtitle={project.subtitle} description={project.description}/>
                 })
             }
         </div>

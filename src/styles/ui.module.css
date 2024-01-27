@@ -8,9 +8,19 @@
     transition: 1s;
   }
 
+  .header {
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    transition: 1s;
+  }
+
   .card {
 
   }
   .card:hover .cardBody {
     right:0;
+  }
+
+  .card:hover .header {
+    bottom: -100% ;
   }
