@@ -1,4 +1,16 @@
 .gradient {
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, #BB48DA 0%, #111111 90%);
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #111111 0%, #000000 90%);
   }
-  
+
+  .cardBody {
+    right: -100% ;
+    backdrop-filter: blur(5px);
+    transition: 1s;
+  }
+
+  .card {
+
+  }
+  .card:hover .cardBody {
+    right:0;
+  }

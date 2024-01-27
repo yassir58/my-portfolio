@@ -18,19 +18,19 @@ export default function HomePage() {
       <div className="hidden items-center justify-start gap-3 lg:flex">
         <Link
           href=""
-          className="flex items-center justify-center rounded-xl bg-[#111111] p-2 text-[#BB48DA] shadow-sm"
+          className="flex items-center justify-center rounded-xl bg-[#111111] p-2 text-[#BB48DA] shadow-sm hover:scale-110"
         >
           <FaLinkedin />
         </Link>
         <Link
           href=""
-          className="flex items-center justify-center rounded-xl bg-[#111111] p-2 text-[#BB48DA] shadow-sm"
+          className="flex items-center justify-center rounded-xl bg-[#111111] p-2 text-[#BB48DA] shadow-sm hover:scale-110"
         >
           <FaGithub />
         </Link>
         <Link
           href=""
-          className="flex items-center justify-center rounded-xl bg-[#111111] p-2 text-[#BB48DA] shadow-sm"
+          className="flex items-center justify-center rounded-xl bg-[#111111] p-2 text-[#BB48DA] shadow-sm hover:scale-110"
         >
           <FaXTwitter />
         </Link>
