@@ -19,13 +19,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} bg-[#060606]`}>
+      <body className={`font-sans ${inter.variable} bg-[#060606]`} id='your-element-selector'>
       <main className="flex min-h-screen flex-col items-center justify-start bg-[#060606] text-white">
       <Header />
       {children}
     </main>
+<script>
+
+</script>
       </body>
     </html>
   );

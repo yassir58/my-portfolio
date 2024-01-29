@@ -41,7 +41,14 @@ const page:React.FC = () => {
         subtitle:'System Administration & Devops',
         description:'This 42 school project is designed to expand your understanding of system administration through the practical application of Docker.',
         link:'https://github.com/yassir58/Inception-42'
-    }
+    },
+    {
+        image:'wordlegame.gif',
+            title:'WORDLE GAME PLATFORM',
+            subtitle:'Web Developement',
+            description:'Wordle game platform offering guest and user login options, complete with game statistics, history tracking, a user-friendly guide, interactive challenges, and customizable light and dark modes for an enhanced gaming experience.',
+            link:'https://github.com/yassir58/wordle-game'
+        }
 ]
     return (<div className="flex flex-col w-[95%] h-full justify-start items-center">
         <div className='flex flex-col justify-center items-center gap-4 text-center'>
