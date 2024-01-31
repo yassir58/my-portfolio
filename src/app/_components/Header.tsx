@@ -75,7 +75,7 @@ const Header:React.FC = () => {
                 <p>Resume</p>
                 <MdFileDownload/>
             </button>
-            <RxCross1 className="lg:hidden text-white hover:opacity-85 hover:scale-105 absolute top-6 right-6" onClick={() => setIsOpen (false)}/>
+            <RxCross1 className="text-white hover:opacity-85 hover:scale-105 absolute top-6 right-6" onClick={() => setIsOpen (false)}/>
         </div>
      </div>
 
