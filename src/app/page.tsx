@@ -3,14 +3,15 @@ import { GoDotFill } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import ui from '../styles/ui.module.css'
 
 export default function HomePage() {
   return (
-    <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
+    <div className={`flex flex-col items-center justify-center gap-12 px-4 py-16 bg-transparent w-full `}>
       <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-        Hello I'm <span className="text-[hsl(280,100%,70%)]">YASSIR</span>
+        Hello I'm <span className={`${ui.textGradient} ` }>YASSIR</span>
       </h1>
-      <h3 className='text-white max-w-lg text-center'>A dedicated <span className="text-[hsl(280,100%,70%)] font-bold">42 School</span> student on the journey to mastery, transitioning into a skilled Fullstack Developer.</h3>
+      <h3 className='text-white max-w-lg text-center'>A dedicated <span className={`font-bold text-[hsl(280,100%,70%)]`}>42 School</span> student on the journey to mastery, transitioning into a skilled Fullstack Developer.</h3>
       <span className="flex items-center justify-start gap-2 rounded-xl border-2 border-[#BB48DA] p-1">
         <GoDotFill className="text-[#BB48DA]" />
         <p className="text-sm text-white">available for work</p>

@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
 import Header from "./_components/Header";
+import ui from "../styles/ui.module.css"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,8 +23,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} bg-[#060606]`} id='your-element-selector'>
-      <main className="flex min-h-screen flex-col items-center justify-start bg-[#060606] text-white">
+      <body className={`font-sans ${inter.variable} `} >
+      <main className={`${ui.gradientBg} flex min-h-screen flex-col items-center justify-start bg-[#060606] text-white`} >
       <Header />
       {children}
     </main>

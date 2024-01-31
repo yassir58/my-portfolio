@@ -24,3 +24,15 @@
   .card:hover .header {
     bottom: -100% ;
   }
+
+  .textGradient {
+    font-size: 72px;
+    background: -webkit-linear-gradient(hsl(280,100%,70%), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradientBg {
+    background: rgb(0,0,0);
+background: linear-gradient(169deg, rgba(0,0,0,1) 72%, rgba(128,0,128,1) 100%);
+  }
