@@ -27,6 +27,7 @@ export default function RootLayout({
       <main className={`${ui.gradientBg} flex min-h-screen flex-col items-center justify-start bg-[#060606] text-white`} >
       <Header />
       {children}
+      <Analytics />
     </main>
 <script>
 
