@@ -1,5 +1,5 @@
 import "~/styles/globals.css";
-
+import { Analytics } from '@vercel/analytics/react';
 import { Inter } from "next/font/google";
 import Header from "./_components/Header";
 import ui from "../styles/ui.module.css"
