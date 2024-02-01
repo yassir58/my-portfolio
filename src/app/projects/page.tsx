@@ -15,7 +15,8 @@ const page:React.FC = () => {
         title:'KANBAN TASK MANAGER',
         subtitle:'Web Developement',
         description:'A Kanban-style task manager that enables users to efficiently manage and organize their tasks while facilitating seamless collaboration with others.',
-        link:'https://github.com/yassir58/next-task-manger'
+        link:'https://github.com/yassir58/next-task-manger',
+        view:'https://kanban-task-manger.vercel.app/'
 
     },
     {
@@ -60,7 +61,7 @@ const page:React.FC = () => {
         <div className='flex pt-8 pb-4 gap-4 justify-center items-start flex-wrap'>
             {
                 projects.map ((project, index) => {
-                    return <Card  key={index} link={project.link} image={project.image} title={project.title} subtitle={project.subtitle} description={project.description}/>
+                    return <Card  key={index} link={project.link} view={project?.view} image={project.image} title={project.title} subtitle={project.subtitle} description={project.description}/>
                 })
             }
         </div>
