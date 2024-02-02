@@ -2,6 +2,7 @@ import ui from '../../styles/ui.module.css'
 import { FaGithub } from 'react-icons/fa'
 import Link from 'next/link'
 import { GrFormView } from "react-icons/gr";
+
 interface props {
     image: string
     title: string
