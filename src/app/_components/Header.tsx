@@ -7,6 +7,7 @@ import { MdMenu } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { usePathname, useRouter } from "next/navigation";
+import ui from "../../styles/ui.module.css"
 
 // 
 const Header:React.FC = () => {
@@ -43,35 +44,35 @@ const Header:React.FC = () => {
      
     return (<div className='w-[90%] h-[70px] my-4 rounded-xl flex justify-between items-center'>
         <div className="flex gap-4 justify-start items-center">
-            <Image width={60} height={60} src={'/yelatman.jpg'} alt="profile" className="rounded-md mx-[-15px]"/>
+            <Image width={60} height={60} src={'/yelatman.jpg'} alt="profile" className={`rounded-md mx-[-15px] ${ui.glowing}`}/>
             <div className='flex flex-col gap-1 justify-start items-start pl-4'>
                 <h1 className='text-[#F8F8F8] text-[26px] font-semibold'>Yassir Elatmani</h1>
-                <p className="text-sm text-[hsl(280,100%,70%)]">Fullstack Developer</p>
+                <p className="text-sm text-[#00afb9]">Fullstack Developer</p>
             </div>
         </div>
 
 
-     <div className={`w-[100vw] h-[100vh] flex justify-center items-center top-0 left-0 z-50 bg-black ${isOpen ? 'fixed': 'hidden'}`}>
+     <div className={`w-[100vw] h-[100vh] flex justify-center items-center top-0 left-0 z-50 ${ui.gradient} ${isOpen ? 'fixed': 'hidden'}`}>
         <div className="items-center justify-start gap-8 flex flex-col">
-        <Link className='text-[16px] text-[#F8F8F8] font-semibold'  href={'/'} onClick={() => 
+        <Link className='text-[16px] text-[#F8F8F8] hover:text-[#00afb9] '  href={'/'} onClick={() => 
             {
                 setIsOpen (false)
             
         }}>
-                Contact
+                WO AM I?
             </Link>
-            <Link className='text-[16px] text-[#F8F8F8] font-semibold' href={'/about'} onClick={() => {
+            <Link className='text-[16px] text-[#F8F8F8] hover:text-[#00afb9] ' href={'/skills'} onClick={() => {
                 setIsOpen (false)
 
                 }}>
-                About
+                SKILLS
             </Link>
-            <Link className='text-[16px] text-[#F8F8F8] font-semibold' href={'/projects'} onClick={() => {
+            <Link className='text-[16px] text-[#F8F8F8] hover:text-[#00afb9] ' href={'/projects'} onClick={() => {
                 setIsOpen (false)
                 }}>
-                Projects
+                PROJECTS
             </Link>
-            <button onClick={handleDownload} className='text-[16px] flex gap-4 text-[#F8F8F8] font-semibold bg-[hsl(280,100%,70%)] justify-center items-center rounded-md hover:opacity-90 p-3 ' >
+            <button onClick={handleDownload} className={`${ui.glowingButton} flex gap-4 justify-center items-center`} >
                 <p>Resume</p>
                 <MdFileDownload/>
             </button>
@@ -81,19 +82,18 @@ const Header:React.FC = () => {
 
         <div className="items-center justify-start gap-8 flex">
 
-        <Link className='text-[16px] text-[#F8F8F8] font-semibold lg:block hidden ' href={'/'}>
-                Contact
+        <Link className='text-[16px] text-[#F8F8F8] hover:text-[#00afb9]  lg:block hidden ' href={'/'}>
+                WO AM I?
             </Link>
-            <Link className='text-[16px] text-[#F8F8F8] font-semibold lg:block hidden ' href={'/about'}>
-                About
+            <Link className='text-[16px] text-[#F8F8F8] hover:text-[#00afb9]  lg:block hidden ' href={'/skills'}>
+                SKILLS
             </Link>
-            <Link className='text-[16px] text-[#F8F8F8] font-semibold lg:block hidden ' href={'/projects'}>
-                Projects
+            <Link className='text-[16px] text-[#F8F8F8] hover:text-[#00afb9]  lg:block hidden ' href={'/projects'}>
+                PROJECTS
             </Link>
         
-            <button onClick={handleDownload} className='text-[16px]  gap-4 text-[#F8F8F8] font-semibold bg-[hsl(280,100%,70%)] justify-center items-center rounded-md hover:opacity-90 p-3 hidden lg:flex ' >
-                <p>Resume</p>
-                <MdFileDownload/>
+            <button onClick={handleDownload} className='text-[16px]  gap-4 text-[#F8F8F8]  justify-center items-center  hover:opacity-90 p-3 hidden lg:flex ' >
+                RESUME
             </button>
             <MdMenu className="lg:hidden text-white hover:opacity-85 hover:scale-105" onClick={() => setIsOpen (true)}/>
         </div>

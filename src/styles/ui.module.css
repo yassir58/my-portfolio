@@ -1,5 +1,5 @@
 .gradient {
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, #111111 0%, #000000 90%);
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #1b263b 0%, #000814 90%);
   }
 
   .cardBody {
@@ -26,13 +26,52 @@
   }
 
   .textGradient {
-    font-size: 72px;
-    background: -webkit-linear-gradient(hsl(280,100%,70%), #333);
+    background: -webkit-linear-gradient(#00afb9, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .gradientBg {
     background: rgb(0,0,0);
-background: linear-gradient(169deg, rgba(0,0,0,1) 72%, rgba(128,0,128,1) 100%);
+  background: linear-gradient(169deg, #000814 72%, #1b263b 100%);
+  }
+
+  .glowingButton {
+    width:130px;
+    color:white;
+    background: #00afb9;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px #00afb9;
+    font-weight: 600;
+    font-size: 16px;
+
+  }
+
+  .glowing {
+    box-shadow: 0 0 20px #00afb9;
+  }
+
+  .tag {
+    padding:5px 10px ;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: white;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 0 5px #fff;
+  }
+
+  .tech {
+    padding:2px 5px;
+    /* margin: 2px; */
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #00afb9;
+    box-shadow: 0 0 20px #00afb9;
   }
